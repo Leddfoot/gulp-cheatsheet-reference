@@ -4,29 +4,20 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <title>Daily Quote</title>
+      <title>Gulp Boilerplate</title>
       <link rel="stylesheet" href="css/style.css">
     </head>
 
 
     <body>
       <div class="body-wrapper">
-        <h1>Note styling is on codepen version!!!! https://codepen.io/Leddfoot/pen/vjzYYz</h1>
-        <h1>IF you want to use minify you have to use babel to do its thing before calling uglify, it doesnt understand arrow</h1>
-          <h1>Right Now the Main.js is disabled, have to adjust that back after babel</h1>
-          <h1>GULP Watch is now the mega command, check gulpfile if you forget why</h1>
-          <h1>Quote Api</h1>
-          <h1>fix git. the git ignore has everything blocked</h1>
-
-          <button id = "getQuote">
-            Get A Quote
-          </button>
-
-          <p class="randomQuote" id="randomQuote"></p>
-          <p class="author"></p>
-
-        <button class="tweetQuote" onclick="tweetQuote()" disabled="true">Tweet this quote!!!</button>
-        <p id="tooLong"></p>
+        <h1>Note: everything is in the gulpfile.js</h1>
+        <p>Nothing fancy here. Just practice with gulp automation and a boilerplate. Moves the index file as-is. Places the css file
+        from sass in the right place, and concatenates all js files (in the js folder)</p>
+        <p>Note any newer javascript used will create an error with no logging. Babel must be used before uglify is ran.
+          And the errors will not pipe. A module called --pump-- must be added if you want to see errors from uglify!!!!
+        </p>
+        <p>the command --gulp--, which is set as a default, runs all tasks from the command line in.</p>
       <script src="js/main.js"></script>
       </div>
     </body>
