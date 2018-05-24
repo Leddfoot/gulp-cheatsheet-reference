@@ -69,6 +69,8 @@ gulp.task('wipe', function() {
 
 //access at command line via just: gulp
 gulp.task('default', ['message', 'wipe', 'copyHtml', 'sass', 'concat']);
+
+//gulp watch --watch for changes and update as they occur
   gulp.task('watch', function() {
   gulp.watch('src/js/*.js', ['concat']);
   gulp.watch('src/sass/*.scss', ['sass']);
